@@ -8,17 +8,17 @@
 
 import CoreData
 
-public class CoreData: CoreDataAccessable {
+open class CoreData: CoreDataAccessable {
 
     private let persistentContainer: NSPersistentContainer
 
-    public lazy var mainContext: NSManagedObjectContext = {
+    open lazy var mainContext: NSManagedObjectContext = {
         persistentContainer.viewContext.automaticallyMergesChangesFromParent = true
         persistentContainer.viewContext.mergePolicy = NSMergePolicy.mergeByPropertyObjectTrump
         return persistentContainer.viewContext
     }()
 
-    public func createBackgroundContext() -> NSManagedObjectContext {
+    open func createBackgroundContext() -> NSManagedObjectContext {
         let context = persistentContainer.newBackgroundContext()
         context.automaticallyMergesChangesFromParent = true
         context.mergePolicy = NSMergePolicy.mergeByPropertyObjectTrump
@@ -36,7 +36,7 @@ public class CoreData: CoreDataAccessable {
         })
     }
 
-    public func performBackgroundTask(_ block: @escaping (NSManagedObjectContext) -> Void) {
+    open func performBackgroundTask(_ block: @escaping (NSManagedObjectContext) -> Void) {
         persistentContainer.performBackgroundTask(block)
     }
 }

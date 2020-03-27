@@ -8,7 +8,7 @@
 
 import CoreData
 
-public final class ManagedObjectObserver {
+open class ManagedObjectObserver {
     private weak var delegate: ManagedObjectObserverDelegate?
     private let context: NSManagedObjectContext
     private var token: NSObjectProtocol?
@@ -17,7 +17,7 @@ public final class ManagedObjectObserver {
         self.context = context
     }
 
-    public func start() {
+    open func start() {
         stop()
         token = NotificationCenter.default.addObserver(forName: .NSManagedObjectContextObjectsDidChange, object: context, queue: .main) { [weak self] (notification) in
             guard let self = self, let userInfo = notification.userInfo else { return }
@@ -30,7 +30,7 @@ public final class ManagedObjectObserver {
         }
     }
 
-    public func stop() {
+    open func stop() {
         token.map { NotificationCenter.default.removeObserver($0) }
         token = nil
     }
