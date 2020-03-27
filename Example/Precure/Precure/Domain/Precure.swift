@@ -7,6 +7,7 @@
 //
 
 struct Precure {
+
     let name: String
     let precureName: String
     let cv: String
@@ -21,6 +22,7 @@ struct Precure {
 }
 
 struct PrecureSeries {
+
     let seriesId: ID
     let title: String
     let startYear: Int

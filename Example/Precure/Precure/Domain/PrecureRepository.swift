@@ -7,10 +7,23 @@
 //
 
 protocol PrecureRepository {
+
+    var delegate: PrecureRepositoryDelegate? { get set }
+
     func sync() throws
     func precureCount() throws -> Int
     func precureSeriesCount() throws -> Int
     func fetchPrecureSeries() throws -> [PrecureSeries]
     func fetchPrecure(seriesId: PrecureSeries.ID?) throws -> [Precure]
     func allDelete() throws
+}
+
+protocol PrecureRepositoryDelegate: class {
+    func didChangePrecure(_ precure: Precure, result: PrecureDidChangeResult)
+}
+
+enum PrecureDidChangeResult {
+    case joined
+    case grown
+    case exited
 }
