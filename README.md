@@ -1,1 +1,3 @@
 # CoreDataAccess
+
+CoreData convenience methods
