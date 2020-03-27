@@ -37,8 +37,12 @@ open class ManagedObjectObserver {
 }
 
 public protocol ManagedObjectObserverDelegate: class {
-    func didChangeManagedObject(_ object: NSManagedObject, result: ManagedObjectDidChangeResult)
+    func didChangeManagedObject(_ object: ManagedObject, result: ManagedObjectDidChangeResult)
 }
+
+public protocol ManagedObject {}
+
+extension NSManagedObject: ManagedObject {}
 
 public enum ManagedObjectDidChangeResult {
     case inserted
