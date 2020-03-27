@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E173052C242DF332005778C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E173052B242DF332005778C7 /* AppDelegate.swift */; };
+		E173052E242DF332005778C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E173052D242DF332005778C7 /* SceneDelegate.swift */; };
+		E1730530242DF332005778C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E173052F242DF332005778C7 /* ViewController.swift */; };
+		E1730533242DF332005778C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1730531242DF332005778C7 /* Main.storyboard */; };
+		E1730538242DF334005778C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1730537242DF334005778C7 /* Assets.xcassets */; };
+		E173053B242DF334005778C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1730539242DF334005778C7 /* LaunchScreen.storyboard */; };
+		E1730546242DF334005778C7 /* PrecureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1730545242DF334005778C7 /* PrecureTests.swift */; };
+		E1730551242DF334005778C7 /* PrecureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1730550242DF334005778C7 /* PrecureUITests.swift */; };
+		E1D8183E242DF48900CC977A /* Precure.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1D8183B242DF48900CC977A /* Precure.xcdatamodeld */; };
+		E1D81840242DF4B200CC977A /* Precure.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D8183F242DF4B200CC977A /* Precure.swift */; };
+		E1D81842242DF4DE00CC977A /* PrecureRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D81841242DF4DE00CC977A /* PrecureRepository.swift */; };
+		E1D81844242DF52700CC977A /* PrecureResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D81843242DF52700CC977A /* PrecureResources.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1730542242DF334005778C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1730520242DF332005778C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1730527242DF332005778C7;
+			remoteInfo = Precure;
+		};
+		E173054D242DF334005778C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1730520242DF332005778C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1730527242DF332005778C7;
+			remoteInfo = Precure;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E1730528242DF332005778C7 /* Precure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Precure.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E173052B242DF332005778C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E173052D242DF332005778C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E173052F242DF332005778C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E1730532242DF332005778C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E1730537242DF334005778C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E173053A242DF334005778C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E173053C242DF334005778C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1730541242DF334005778C7 /* PrecureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrecureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1730545242DF334005778C7 /* PrecureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrecureTests.swift; sourceTree = "<group>"; };
+		E1730547242DF334005778C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E173054C242DF334005778C7 /* PrecureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrecureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1730550242DF334005778C7 /* PrecureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrecureUITests.swift; sourceTree = "<group>"; };
+		E1730552242DF334005778C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1D8183C242DF48900CC977A /* Precure.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Precure.xcdatamodel; sourceTree = "<group>"; };
+		E1D8183F242DF4B200CC977A /* Precure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Precure.swift; sourceTree = "<group>"; };
+		E1D81841242DF4DE00CC977A /* PrecureRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrecureRepository.swift; sourceTree = "<group>"; };
+		E1D81843242DF52700CC977A /* PrecureResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrecureResources.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1730525242DF332005778C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E173053E242DF334005778C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1730549242DF334005778C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E173051F242DF332005778C7 = {
+			isa = PBXGroup;
+			children = (
+				E173052A242DF332005778C7 /* Precure */,
+				E1730544242DF334005778C7 /* PrecureTests */,
+				E173054F242DF334005778C7 /* PrecureUITests */,
+				E1730529242DF332005778C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E1730529242DF332005778C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1730528242DF332005778C7 /* Precure.app */,
+				E1730541242DF334005778C7 /* PrecureTests.xctest */,
+				E173054C242DF334005778C7 /* PrecureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E173052A242DF332005778C7 /* Precure */ = {
+			isa = PBXGroup;
+			children = (
+				E1D8183A242DF48900CC977A /* Data */,
+				E1D8183D242DF48900CC977A /* Domain */,
+				E173052B242DF332005778C7 /* AppDelegate.swift */,
+				E173052D242DF332005778C7 /* SceneDelegate.swift */,
+				E173052F242DF332005778C7 /* ViewController.swift */,
+				E1730531242DF332005778C7 /* Main.storyboard */,
+				E1730537242DF334005778C7 /* Assets.xcassets */,
+				E1730539242DF334005778C7 /* LaunchScreen.storyboard */,
+				E173053C242DF334005778C7 /* Info.plist */,
+			);
+			path = Precure;
+			sourceTree = "<group>";
+		};
+		E1730544242DF334005778C7 /* PrecureTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1730545242DF334005778C7 /* PrecureTests.swift */,
+				E1730547242DF334005778C7 /* Info.plist */,
+			);
+			path = PrecureTests;
+			sourceTree = "<group>";
+		};
+		E173054F242DF334005778C7 /* PrecureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E1730550242DF334005778C7 /* PrecureUITests.swift */,
+				E1730552242DF334005778C7 /* Info.plist */,
+			);
+			path = PrecureUITests;
+			sourceTree = "<group>";
+		};
+		E1D8183A242DF48900CC977A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E1D81843242DF52700CC977A /* PrecureResources.swift */,
+				E1D8183B242DF48900CC977A /* Precure.xcdatamodeld */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E1D8183D242DF48900CC977A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E1D8183F242DF4B200CC977A /* Precure.swift */,
+				E1D81841242DF4DE00CC977A /* PrecureRepository.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1730527242DF332005778C7 /* Precure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1730555242DF334005778C7 /* Build configuration list for PBXNativeTarget "Precure" */;
+			buildPhases = (
+				E1730524242DF332005778C7 /* Sources */,
+				E1730525242DF332005778C7 /* Frameworks */,
+				E1730526242DF332005778C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Precure;
+			productName = Precure;
+			productReference = E1730528242DF332005778C7 /* Precure.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1730540242DF334005778C7 /* PrecureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1730558242DF334005778C7 /* Build configuration list for PBXNativeTarget "PrecureTests" */;
+			buildPhases = (
+				E173053D242DF334005778C7 /* Sources */,
+				E173053E242DF334005778C7 /* Frameworks */,
+				E173053F242DF334005778C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1730543242DF334005778C7 /* PBXTargetDependency */,
+			);
+			name = PrecureTests;
+			productName = PrecureTests;
+			productReference = E1730541242DF334005778C7 /* PrecureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E173054B242DF334005778C7 /* PrecureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E173055B242DF334005778C7 /* Build configuration list for PBXNativeTarget "PrecureUITests" */;
+			buildPhases = (
+				E1730548242DF334005778C7 /* Sources */,
+				E1730549242DF334005778C7 /* Frameworks */,
+				E173054A242DF334005778C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E173054E242DF334005778C7 /* PBXTargetDependency */,
+			);
+			name = PrecureUITests;
+			productName = PrecureUITests;
+			productReference = E173054C242DF334005778C7 /* PrecureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1730520242DF332005778C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Hitoshi Abe";
+				TargetAttributes = {
+					E1730527242DF332005778C7 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					E1730540242DF334005778C7 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = E1730527242DF332005778C7;
+					};
+					E173054B242DF334005778C7 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = E1730527242DF332005778C7;
+					};
+				};
+			};
+			buildConfigurationList = E1730523242DF332005778C7 /* Build configuration list for PBXProject "Precure" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E173051F242DF332005778C7;
+			productRefGroup = E1730529242DF332005778C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1730527242DF332005778C7 /* Precure */,
+				E1730540242DF334005778C7 /* PrecureTests */,
+				E173054B242DF334005778C7 /* PrecureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1730526242DF332005778C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E173053B242DF334005778C7 /* LaunchScreen.storyboard in Resources */,
+				E1730538242DF334005778C7 /* Assets.xcassets in Resources */,
+				E1730533242DF332005778C7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E173053F242DF334005778C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E173054A242DF334005778C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1730524242DF332005778C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D81844242DF52700CC977A /* PrecureResources.swift in Sources */,
+				E1D81842242DF4DE00CC977A /* PrecureRepository.swift in Sources */,
+				E1730530242DF332005778C7 /* ViewController.swift in Sources */,
+				E173052C242DF332005778C7 /* AppDelegate.swift in Sources */,
+				E1D8183E242DF48900CC977A /* Precure.xcdatamodeld in Sources */,
+				E1D81840242DF4B200CC977A /* Precure.swift in Sources */,
+				E173052E242DF332005778C7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E173053D242DF334005778C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1730546242DF334005778C7 /* PrecureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1730548242DF334005778C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1730551242DF334005778C7 /* PrecureUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1730543242DF334005778C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1730527242DF332005778C7 /* Precure */;
+			targetProxy = E1730542242DF334005778C7 /* PBXContainerItemProxy */;
+		};
+		E173054E242DF334005778C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1730527242DF332005778C7 /* Precure */;
+			targetProxy = E173054D242DF334005778C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E1730531242DF332005778C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1730532242DF332005778C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E1730539242DF334005778C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E173053A242DF334005778C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1730553242DF334005778C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E1730554242DF334005778C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1730556242DF334005778C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86SDX6C6P5;
+				INFOPLIST_FILE = Precure/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hitoshiabe.Precure;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1730557242DF334005778C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86SDX6C6P5;
+				INFOPLIST_FILE = Precure/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hitoshiabe.Precure;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E1730559242DF334005778C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86SDX6C6P5;
+				INFOPLIST_FILE = PrecureTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hitoshiabe.PrecureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Precure.app/Precure";
+			};
+			name = Debug;
+		};
+		E173055A242DF334005778C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86SDX6C6P5;
+				INFOPLIST_FILE = PrecureTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hitoshiabe.PrecureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Precure.app/Precure";
+			};
+			name = Release;
+		};
+		E173055C242DF334005778C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86SDX6C6P5;
+				INFOPLIST_FILE = PrecureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hitoshiabe.PrecureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Precure;
+			};
+			name = Debug;
+		};
+		E173055D242DF334005778C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86SDX6C6P5;
+				INFOPLIST_FILE = PrecureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hitoshiabe.PrecureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Precure;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1730523242DF332005778C7 /* Build configuration list for PBXProject "Precure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1730553242DF334005778C7 /* Debug */,
+				E1730554242DF334005778C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1730555242DF334005778C7 /* Build configuration list for PBXNativeTarget "Precure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1730556242DF334005778C7 /* Debug */,
+				E1730557242DF334005778C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1730558242DF334005778C7 /* Build configuration list for PBXNativeTarget "PrecureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1730559242DF334005778C7 /* Debug */,
+				E173055A242DF334005778C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E173055B242DF334005778C7 /* Build configuration list for PBXNativeTarget "PrecureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E173055C242DF334005778C7 /* Debug */,
+				E173055D242DF334005778C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E1D8183B242DF48900CC977A /* Precure.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E1D8183C242DF48900CC977A /* Precure.xcdatamodel */,
+			);
+			currentVersion = E1D8183C242DF48900CC977A /* Precure.xcdatamodel */;
+			path = Precure.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E1730520242DF332005778C7 /* Project object */;
+}
