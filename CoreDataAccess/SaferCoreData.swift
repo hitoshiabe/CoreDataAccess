@@ -8,18 +8,18 @@
 
 import CoreData
 
-public class SaferCoreData: CoreDataAccessable {
+open class SaferCoreData: CoreDataAccessable {
 
     private let writeContext: NSManagedObjectContext
 
-    public lazy var mainContext: NSManagedObjectContext = {
+    open lazy var mainContext: NSManagedObjectContext = {
         let context = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
         context.automaticallyMergesChangesFromParent = true
         context.parent = writeContext
         return context
     }()
 
-    public func createBackgroundContext() -> NSManagedObjectContext {
+    open func createBackgroundContext() -> NSManagedObjectContext {
         let context = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
         context.automaticallyMergesChangesFromParent = true
         context.parent = mainContext

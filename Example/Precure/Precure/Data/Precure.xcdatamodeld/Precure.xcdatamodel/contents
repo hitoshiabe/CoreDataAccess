@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15400" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="PrecureEntity" representedClassName="PrecureEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="color" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cv" attributeType="String" defaultValueString=""/>
+        <attribute name="heroine" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String" defaultValueString=""/>
+        <attribute name="precure_name" attributeType="String" defaultValueString=""/>
+        <attribute name="series_id" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="series" maxCount="1" deletionRule="Nullify" destinationEntity="PrecureSeriesEntity" inverseName="precures" inverseEntity="PrecureSeriesEntity"/>
+    </entity>
+    <entity name="PrecureSeriesEntity" representedClassName="PrecureSeriesEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="series_id" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="start_year" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" attributeType="String" defaultValueString=""/>
+        <relationship name="precures" toMany="YES" deletionRule="Nullify" destinationEntity="PrecureEntity" inverseName="series" inverseEntity="PrecureEntity"/>
+    </entity>
+    <elements>
+        <element name="PrecureEntity" positionX="-63" positionY="-18" width="128" height="148"/>
+        <element name="PrecureSeriesEntity" positionX="-54" positionY="-9" width="128" height="103"/>
+    </elements>
+</model>
